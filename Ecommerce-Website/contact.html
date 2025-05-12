@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - ShopEasy</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/header.css">
+
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1><a href="index.html">ShopEasy</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="header-actions">
+          <div class="user-menu">
+            <button id="user-menu-btn" class="user-menu-btn">
+              <span id="user-name">Account</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="user-dropdown" class="user-dropdown">
+              <a href="profile.html">My Profile</a>
+              <a href="orders.html">My Orders</a>
+              <a href="#" id="logout-btn">Logout</a>
+            </div>
+          </div>
+          <div class="cart-icon">
+            <span class="cart-count">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          </div>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div> -->
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Contact Us</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>Have questions, feedback, or need assistance? We're here to help! Fill out the form and we'll get back to you as soon as possible.</p>
+            
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <h3>Address</h3>
+                <p>123 E-commerce Street<br>Shopping District<br>New York, NY 10001</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <h3>Phone</h3>
+                <p>Customer Service: +1 (555) 123-4567<br>Support: +1 (555) 987-6543</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p>General Inquiries: info@shopeasy.com<br>Support: support@shopeasy.com</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">🕒</div>
+              <div class="info-content">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <h3>Connect With Us</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">IG</a>
+                <a href="#" class="social-icon">TW</a>
+                <a href="#" class="social-icon">YT</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            
+            <div id="contact-success-message" class="success-message"></div>
+            <div id="contact-error-message" class="error-message"></div>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <h2>Find Us</h2>
+        <div class="map-container">
+          <!-- Placeholder for map -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96669.20747482093!2d-74.05242707179421!3d40.78593262380767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259afcda5009d%3A0x842a3dae11cd7e43!2sNew%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sza!4v1746978549102!5m2!1sen!2sza" 
+            width="1280" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">How long does shipping take?</div>
+            <div class="faq-answer">
+              <p>Standard shipping typically takes 3-5 business days within the continental United States. Express shipping options are available at checkout for faster delivery.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">What is your return policy?</div>
+            <div class="faq-answer">
+              <p>We offer a 30-day return policy for most items. Products must be in their original condition with all packaging and tags. Some restrictions apply for certain product categories.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Do you ship internationally?</div>
+            <div class="faq-answer">
+              <p>Yes, we ship to most countries worldwide. International shipping times and costs vary depending on the destination. You can see estimated shipping costs at checkout.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">How can I track my order?</div>
+            <div class="faq-answer">
+              <p>Once your order ships, you'll receive a confirmation email with tracking information. You can also view your order status and tracking details in your account dashboard.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Do you offer gift wrapping?</div>
+            <div class="faq-answer">
+              <p>Yes, we offer gift wrapping services for a small additional fee. You can select this option during checkout and even include a personalized message.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>ShopEasy</h3>
+          <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Email: info@shopeasy.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api-client.js"></script>
+  <script src="js/cart-sidebar.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
